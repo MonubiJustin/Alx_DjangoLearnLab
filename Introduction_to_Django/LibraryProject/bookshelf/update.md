@@ -2,13 +2,13 @@
 from bookshelf.models import Book
 
 # Retrieve the book
-bk = Book.objects.get(title="1984")
+book = Book.objects.get(title="1984")
 
 # Update the title
-bk.title = "Nineteen Eighty-Four"
-bk.save() # save changes
+book.title = "Nineteen Eighty-Four"
+book.save() # save changes
 
-print(bk)
+print(book)
 
 # Expected Output:
 # Nineteen Eighty-Four
