@@ -3,7 +3,7 @@ from django.views.generic.detail import DetailView
 from .models import Library, Book
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.decorators import user_passes_test, login_required
+from django.contrib.auth.decorators import user_passes_test
 
 # List all books
 def list_books(request):
@@ -45,7 +45,7 @@ def is_member(user):
 
 # Admin view
 @user_passes_test(is_admin)
-def admin_view(request):
+def Admin(request):
     return render(request, "relationship_app/admin_view.html")
 
 # Librarian view
