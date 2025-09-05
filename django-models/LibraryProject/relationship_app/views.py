@@ -45,7 +45,7 @@ def is_member(user):
 
 # Admin view
 @user_passes_test(is_admin)
-def AdminView(request):
+def admin_view(request):
     return render(request, "relationship_app/admin_view.html")
 
 # Librarian view
