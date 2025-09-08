@@ -1,12 +1,7 @@
-```python
-from bookshelf.models import Book
-
-# Create a Book instance
-bk = Book.objects.create(title="1984", author="George Orwell", publication_year=1949) 
+<!-- Commands used -->
+t1 = Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
 
 
-print(bk)
+<!-- Comments gotten from creating a book. -->
+No comments was given
 
-# Expected Output:
-# 1984
-```

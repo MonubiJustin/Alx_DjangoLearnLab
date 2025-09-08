@@ -1,14 +1,7 @@
-```python
+<!-- Commands used -->
 from bookshelf.models import Book
-
-book = Book.objects.get(title="Nineteen Eighty-Four")
-
-# Delete the book
 book.delete()
 
-books = Book.objects.all()
-print(books)
 
-# Expected Output:
-# <QuerySet []>   # Empty QuerySet indicates no books in the DB
-```
+<!-- Comments gotten from creating a book. -->
+No comments was given

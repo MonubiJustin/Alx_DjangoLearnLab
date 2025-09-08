@@ -1,12 +1,6 @@
-```python
-from bookshelf.models import Book
+<!-- Commands used -->
+t1 = Book.objects.get(1984)
 
-# Retrieve all books
-books = Book.objects.get(title="1984")
 
-for book in books:
-    print(book.title, book.author, book.publication_year)
-
-# Expected Output:
-# 1984 George Orwell 1949
-```
+<!-- Comments gotten from creating a book. -->
+No comments was given
