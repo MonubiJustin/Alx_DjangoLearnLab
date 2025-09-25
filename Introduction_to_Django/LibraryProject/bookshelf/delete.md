@@ -1,10 +1,12 @@
 ```python
-Book.objects.filter(pk=1).delete()
+from bookshelf.models import Book
+
+book = Book.objects.get(pk=1)
+
+book.delete()
 # (1, {'bookshelf.Book': 1})
 
 books = Book.objects.all()
 print(books)
-
 # <QuerySet []>
 ```
- 
